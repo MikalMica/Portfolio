@@ -88,7 +88,50 @@
 /* contact classes */
 
 .contact {
-    background-color: rgb(202, 202, 202);
+    background-color: rgb(226, 226, 226);
     margin: -0.5rem;
     margin-bottom: -1.5rem;
+}
+
+.contacttext {
+    color:rgb(105, 105, 105);
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.contactlist {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    padding-bottom: 5rem;
+}
+
+.contacticon{
+    text-align: center;
+}
+
+/* game pages classes */
+
+.gamepage {
+    display: grid;
+    grid-template-rows: 60% 50% 30%;
+}
+
+.gametitle {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.gamename {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 3rem;
+    padding: 2rem;
+}
+
+.gamebutton {
+    font-size: 2rem; 
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
