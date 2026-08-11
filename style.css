@@ -1,11 +1,68 @@
+/* language selection classes */
+
+.languagescontainer{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.language{
+    max-width: 5rem;
+    max-height: 2.5rem;
+    border-radius: 0.25rem;
+}
+
+.language:hover{
+    cursor: pointer;
+    scale: 1.05;
+}
+
+.selectedlanguage{
+    border-style: solid;
+    border-color: black;
+    border-radius: 0.5rem;
+}
+
+.selectedlanguage:hover{
+    cursor: default;
+    scale: 1;
+}
+
+/* navigation classes */
+
+.header{
+    background-color: rgb(233, 233, 233);
+}
+
+.navigationheader{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+
+.navigationitem{
+    font-size: 2rem;
+    color: rgb(59, 59, 59);
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navigationitem:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 0.25rem;
+}
+
 /* introduction classes */
 
 .title {
     display: grid;
     grid-template-columns: 25% 50% 25%;
-    padding-top: 5rem;
     font-size: 1.5rem;
     font-weight: bold;
+    padding-top: 1.5rem;
 }
 
 .name {
@@ -32,23 +89,28 @@
     border-style: solid;
     border-radius: 1rem;
     border-color: black;
-    display: grid;
-    grid-template-columns: 20% 80%;
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: 1rem;
 }
 
+.project:hover{
+    scale: 1.025;
+}
+
 .projectdescription{
-    display: grid;
-    grid-template-rows: 2rem 2rem 4rem 0rem;
+    flex: 60%;
+    display: flex;
+    flex-direction: column;
 }
 
 .year {
+    margin-top: -1rem;
     color: hsl(0, 0%, 25%);
 }
 
 .buttons {
-    display: grid;
-    grid-template-columns: 60% 20% 20%;
+    display: flex;
 }
 
 .mbutton{
@@ -60,6 +122,7 @@
     border-color: black;
     border-radius: .5rem;
     border-style: solid;
+    flex-grow: 2;
 }
 
 .mbutton:hover {
@@ -71,19 +134,36 @@
 .gamelanguage {
     font-weight: bold;
     font-style: oblique;
+    flex-grow: 5;
 }
 
 /* competences classes */
 
+.competences{
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
 .listtitle {
     font-size: 1.25rem;
     padding-bottom: 1rem;
+    padding-top: 1rem;
+    font-weight: bold;
+    border-top-color: rgb(145, 144, 144);
+    border-top-width: 0.1rem;
+    border-top-style: solid;
+    font-family:'Courier New', Courier, monospace;
 }
 
 .list {
-    display: grid;
-    grid-template-columns: 15% 15% 15% 15% 15% 15% 10%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
     padding-bottom: 2rem;
+}
+
+.listelement:hover{
+    scale: 1.1;
 }
 
 /* contact classes */
@@ -111,11 +191,17 @@
     text-align: center;
 }
 
+.contacticon:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
 /* game pages classes */
 
 .gamepage {
     display: grid;
     grid-template-rows: 60% 50% 30%;
+    padding-bottom: 7rem;
 }
 
 .gametitle {
@@ -125,8 +211,8 @@
 .gamename {
     text-align: center;
     vertical-align: middle;
-    font-size: 3rem;
     padding: 2rem;
+    font-size: 2.5rem;
 }
 
 .gamebutton {
